@@ -12,9 +12,6 @@ const { onConnect, onDisconnect } = require('./subscription');
 const corsOptions = {
 	origin: process.env.FRONT_END_URL,
 	optionsSuccessStatus: 200,
-	methods: ["GET", "POST"],
-	allowedHeaders: ["Content-Type", "Authorization"],
-	credentials: true,
 };
 
 const server = new ApolloServer({
